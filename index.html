@@ -34,28 +34,42 @@
     </style>
   </head>
   <body class="font-rope">
-    <header class="lg:mx-32 lg:my-14">
-      <!-- nav section -->
-      <nav class="flex justify-between items-center">
-        <div class="lg:hidden"><i class="fa-solid fa-bars"></i></div>
-        <div>
-          <h1 class="text-[#131318] font-extrabold text-[36px]">Hockey's</h1>
+    <header>
+      
+     <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl font-semibold lg:text-5xl lg:font-bold ">Hockey<span class="text-[#FF4240]">'</span>s</a>
         </div>
-        <div >
-          <ul class="flex invisible space-x-4 font-bold lg:visible">
-            <li class="text-[#FF4240]">Home</li>
-            <li>About</li>
-            <li>Pages</li>
-            <li>Block</li>
-            <li>Contact</li>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[#FF4240]">Home</a></li>
+              <li><a>About</a></li>
+              <li><a href="">Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
           </ul>
         </div>
-
-        <div class="space-x-2">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <button class="btn bg-[#FF4240] text-white">Get Ticket</button>
+        <div class="navbar-end">
+          <i class="fa-solid fa-magnifying-glass mr-4 invisible lg:visible"></i>
+          <a class="btn bg-[#FF4240]">Get Ticket</a>
         </div>
-      </nav>
+      </div>
+     </nav>
+     
+     
       <!-- banner section -->
       <div>
         <div class="carousel w-full">
@@ -124,14 +138,14 @@
         <div class="flex flex-col mx-auto items-center justify-center lg:flex-row">
           <div class="">
             <div
-              class="radial-progress text-[#FF4240]"
+              class="radial-progress text-[#FF4240] items-center justify-center"
               style="--value: 87"
               role="progressbar"
             >
               87%
             </div>
-            <h1 class="font-extrabold">Prayer Facility</h1>
-            <p>Your prayer ability is good.Keep tracking</p>
+            <h1 class="font-bold text-center ">Prayer Facility</h1>
+            <p class="text-center">Your prayer ability is good.Keep tracking</p>
           </div>
           <div>
             <div
@@ -176,22 +190,22 @@
           <br />
           placerat dolor. Purus urna in sit nullam proin.
         </p>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
-            <img src="Images/2.png" alt="" />
+            <img class="w-full" src="Images/2.png" alt="" />
           </div>
           <div>
-            <img src="Images/3.png" alt="" />
+            <img class="w-full" src="Images/3.png" alt="" />
           </div>
-          <div class="col-span-2">
-            <img src="Images/4.png" alt="" />
+          <div class="lg:col-span-2">
+            <img class="w-full" src="Images/4.png" alt="" />
           </div>
         </div>
       </section>
       <!-- product section -->
       <section class="mt-12">
         <div class="space-y-4">
-          <h1 class="font-extrabold text-center">New Products</h1>
+          <h1 class="font-extrabold text-center text-3xl">Our New Products</h1>
           <p class="text-center">
             Dit amet consectetur. Condimentum dignissim adipiscing aliquam
             turpis placerat dolor. <br />
@@ -199,9 +213,9 @@
           </p>
         </div>
         <!-- card section -->
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 w-full lg:grid-cols-2 gap-5">
           <!-- card 1 -->
-          <div class="card card-side bg-base-100 shadow-xl pl-6">
+          <div class="card flex flex-col lg:flex-row card-side bg-base-100 shadow-xl pl-6 sm:flex-col">
             <figure><img src="Images/5.png" alt="Movie" /></figure>
             <div class="card-body">
               <div class="flex items-center gap-3">
@@ -214,7 +228,7 @@
               </div>
               <h2 class="font-extrabold">World Cup Flags Football</h2>
               <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
-              <div class="flex items-center gap-8">
+              <div class="lg:flex items-center gap-8">
                 <h2 class="text-[#FF4240] font-extrabold">Price - $22.00</h2>
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-cart-shopping"></i>
@@ -224,7 +238,7 @@
             </div>
           </div>
           <!-- card 2 -->
-          <div class="card card-side bg-base-100 shadow-xl pl-6">
+          <div class="card flex flex-col lg:flex-row card-side bg-base-100 shadow-xl pl-6">
             <figure><img src="Images/6.png" alt="Movie" /></figure>
             <div class="card-body">
               <div class="flex items-center gap-3">
@@ -237,7 +251,7 @@
               </div>
               <h2 class="font-extrabold">World Cup Flags Football</h2>
               <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
-              <div class="flex items-center gap-8">
+              <div class="lg:flex items-center gap-8">
                 <h2 class="text-[#FF4240] font-extrabold">Price - $22.00</h2>
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-cart-shopping"></i>
@@ -247,7 +261,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="card card-side bg-base-100 shadow-xl pl-6">
+          <div class="card flex flex-col lg:flex-row card-side bg-base-100 shadow-xl pl-6">
             <figure><img src="Images/7.png" alt="Movie" /></figure>
             <div class="card-body">
               <div class="flex items-center gap-3">
@@ -260,7 +274,7 @@
               </div>
               <h2 class="font-extrabold">World Cup Flags Football</h2>
               <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
-              <div class="flex items-center gap-8">
+              <div class="lg:flex items-center gap-8">
                 <h2 class="text-[#FF4240] font-extrabold">Price - $22.00</h2>
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-cart-shopping"></i>
@@ -270,7 +284,7 @@
             </div>
           </div>
           <!-- card 4 -->
-          <div class="card card-side bg-base-100 shadow-xl pl-6">
+          <div class="card flex flex-col lg:flex-row card-side bg-base-100 shadow-xl pl-6">
             <figure><img src="Images/8.png" alt="Movie" /></figure>
             <div class="card-body">
               <div class="flex items-center gap-3">
@@ -283,7 +297,7 @@
               </div>
               <h2 class="font-extrabold">World Cup Flags Football</h2>
               <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
-              <div class="flex items-center gap-8">
+              <div class="lg:flex items-center gap-8">
                 <h2 class="text-[#FF4240] font-extrabold">Price - $22.00</h2>
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-cart-shopping"></i>
@@ -293,7 +307,7 @@
             </div>
           </div>
           <!-- card 5 -->
-          <div class="card card-side bg-base-100 shadow-xl pl-6">
+          <div class="card flex flex-col lg:flex-row card-side bg-base-100 shadow-xl pl-6">
             <figure><img src="Images/9.png" alt="Movie" /></figure>
             <div class="card-body">
               <div class="flex items-center gap-3">
@@ -306,7 +320,7 @@
               </div>
               <h2 class="font-extrabold">World Cup Flags Football</h2>
               <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
-              <div class="flex items-center gap-8">
+              <div class="lg:flex items-center gap-8">
                 <h2 class="text-[#FF4240] font-extrabold">Price - $22.00</h2>
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-cart-shopping"></i>
@@ -316,7 +330,7 @@
             </div>
           </div>
           <!-- card 6 -->
-          <div class="card card-side bg-base-100 shadow-xl pl-6">
+          <div class="card flex flex-col lg:flex-row card-side bg-base-100 shadow-xl pl-6">
             <figure><img src="Images/10.png" alt="Movie" /></figure>
             <div class="card-body">
               <div class="flex items-center gap-3">
@@ -329,7 +343,7 @@
               </div>
               <h2 class="font-extrabold">World Cup Flags Football</h2>
               <p>Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
-              <div class="flex items-center gap-8">
+              <div class="lg:flex items-center gap-8">
                 <h2 class="text-[#FF4240] font-extrabold">Price - $22.00</h2>
                 <div class="flex items-center gap-2">
                   <i class="fa-solid fa-cart-shopping"></i>
@@ -353,7 +367,7 @@
           dolor. Purus urna in sit nullam proin.
         </p>
         <!-- phone and form section -->
-        <div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
+        <div class="grid grid-cols-1  lg:grid-cols-3 gap-8">
           <!-- phone section -->
           <div class="flex flex-col gap-6">
             <div class="bg-[#BCED6D1A] p-8 rounded-xl">
@@ -405,10 +419,11 @@
                       <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs bg-gray-100" />
   
                   </div>
-                  <div>
+                  <!--  -->
+                  <div class="col-span-2">
                     <h1 class="font-bold">Messages</h1>
-                  <textarea class="rounded-xl bg-gray-100 p-5" placeholder="write here" name="" id="" cols="80" rows="7"></textarea>
-                  <button class="btn w-full ml-20 bg-[#FF4240]">Send Message</button>
+                  <textarea class="w-full rounded-xl bg-gray-100 p-5 mb-8" placeholder="write here" name="" id="" cols="30" rows="10"></textarea>
+                  <button class="btn w-full bg-[#FF4240]">Send Message</button>
                   </div>
                 </div>
               </div>
@@ -427,31 +442,33 @@
         </div>
       </section>
     </main>
-    <footer class="footer lg:p-10 bg-black text-white text-base-content">
-      <aside>
-        <h1 class="font-extrabold text-3xl">Get In Touch</h1>
-        <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis <br> placerat dolor. Purus urna in sit nullam proin. </p>
-      </aside> 
-      <nav>
-        <header class="footer-title">Company</header> 
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav> 
-      <nav>
-        <header class="footer-title">Support</header> 
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav> 
-      <nav>
-        <header class="footer-title">Services</header> 
-        <a class="link link-hover">Group Lesson</a>
-        <a class="link link-hover">Private Lesson</a>
-        <a class="link link-hover">Consultancy</a>
-      </nav>
+    <footer class="footer  lg:p-10 bg-black text-white text-base-content">
+      <div class="footer mx-auto max-w-[1170px] flex flex-wrap justify-center gap-8 text-center lg:mb-24 lg:text-left lg:justify-between lg:gap-0">
+        <aside>
+          <h1 class="font-extrabold text-3xl text-center">Get In Touch</h1>
+          <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis <br> placerat dolor. Purus urna in sit nullam proin. </p>
+        </aside> 
+        <nav class="w-1/2 lg:w-auto">
+          <header class="footer-title">Company</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav class="w-200px lg:w-auto">
+          <header class="footer-title">Support</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="footer-title">Services</header> 
+          <a class="link link-hover">Group Lesson</a>
+          <a class="link link-hover">Private Lesson</a>
+          <a class="link link-hover">Consultancy</a>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
